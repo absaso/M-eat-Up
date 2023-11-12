@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/border_event"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    >
+
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+        android:text="Sushi" />
+    <TextView
+        android:id="@+id/text_pref"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/imageFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1"
+        android:src="@drawable/sushi_icon" />
+
+
+</LinearLayout>

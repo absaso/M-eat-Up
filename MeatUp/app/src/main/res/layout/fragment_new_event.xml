@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".NewEventFragment">
+
+            <ImageView
+                android:id="@+id/goBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/arrow_back"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Création d'un événement"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:id="@+id/eventName"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:hint="Nom event" />
+
+            <EditText
+                android:id="@+id/restoName"
+                android:inputType="number"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:hint="Choix resto" />
+
+            <EditText
+                android:id="@+id/nbPers"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:layout_marginLeft="15dp"
+                android:hint="Max personnes" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/dateDebut"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:hint="Date"
+                    android:inputType="datetime" />
+
+                <Button
+                    android:id="@+id/selectDateDebutBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Choisir "
+                    android:src="@drawable/calendar"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/heureDebut"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:hint="Heure"
+                    android:inputType="datetime" />
+
+                <Button
+                    android:id="@+id/selectHeureDebutBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Choisir "
+                    android:src="@drawable/calendar"/>
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/newEventBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Créer m'eatup"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>

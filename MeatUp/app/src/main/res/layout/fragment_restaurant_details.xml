@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="Détail sur un restaurant spécifique">
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_marginBottom="50dp">
+
+
+          <ImageView
+              android:id="@+id/goBack"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="20dp"
+              android:layout_marginLeft="5dp"
+              android:src="@drawable/arrow_back"/>
+
+          <ImageView
+              android:id="@+id/appreciation"
+              android:layout_width="35dp"
+              android:layout_height="38dp"
+              android:src="@drawable/happy_faces_24"
+              android:layout_gravity="center"/>
+
+          <TextView
+              android:id="@+id/nomResto"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Nom resto"
+              android:textSize="20dp"
+              android:textStyle="bold"
+              android:layout_marginTop="10dp"
+              android:layout_gravity="center"/>
+
+          <ImageView
+              android:id="@+id/imgResto"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="20dp"
+              android:layout_marginBottom="20dp"
+              android:layout_gravity="center"/>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+              <TextView
+                  android:id="@+id/telephoneResto"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="10dp"
+                  android:text="Téléphone"
+                  android:textSize="15dp"
+                  android:textStyle="bold"
+                  android:layout_marginTop="10dp"/>
+
+              <TextView
+                  android:id="@+id/siteResto"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="150dp"
+                  android:text="Site"
+                  android:textSize="15dp"
+                  android:textStyle="bold"
+                  android:layout_marginTop="10dp"/>
+          </LinearLayout>
+
+          <Button
+              android:id="@+id/newEventBtn"
+              android:layout_marginTop="20dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:text="Créer un meatup" />
+
+          <TextView
+              android:id="@+id/text2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Avis clients"
+              android:textSize="15dp"
+              android:textStyle="bold"
+              android:layout_marginTop="20dp"
+              android:layout_gravity="center"/>
+
+
+          <androidx.recyclerview.widget.RecyclerView
+              android:id="@+id/listComments"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" />
+
+          <TextView
+              android:id="@+id/text3"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Let's meat !"
+              android:textSize="15dp"
+              android:textStyle="bold"
+              android:layout_marginTop="20dp"
+              android:layout_gravity="center"/>
+
+          <androidx.recyclerview.widget.RecyclerView
+              android:id="@+id/listEvents"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" />
+
+      </LinearLayout>
+
+    </ScrollView>
+</layout>

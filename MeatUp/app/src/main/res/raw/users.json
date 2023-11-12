@@ -1,0 +1,6 @@
+[
+  {"id": 0, "name": "Name0", "login": "pseudo0" , "pwd" : "passer","preference": []},
+  {"id": 1, "name": "Name1",  "login": "pseudo1","pwd" : "passer","preference": [] },
+  {"id": 2, "name": "Name2",  "login": "pseudo2","pwd" : "passer","preference": [] },
+  {"id": 3, "name": "Name3",  "login": "pseudo3","pwd" : "passer","preference": [] }
+]
